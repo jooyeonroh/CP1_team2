@@ -40,12 +40,12 @@ def _list():
         return render_template('fridge/ingredient_list.html', ingredient_list=ingredient_list, page=page, kw=kw)
     return render_template('cp_main.html')
 import psycopg2
-
+#postgres://otptpnmh:SIjuMGRhjI8oP675bijQObcEJdIgmeBg@castor.db.elephantsql.com/otptpnmh
 def dbconn():
-    host = 'jelani.db.elephantsql.com'
-    user = 'gycmqpcx'
-    password = 'JFjJrpR7BlY0WMoLKw8BsKSCAoFyWBcQ'
-    database = 'gycmqpcx'
+    host = 'castor.db.elephantsql.com'
+    user = 'otptpnmh'
+    password = 'SIjuMGRhjI8oP675bijQObcEJdIgmeBg'
+    database = 'otptpnmh'
 
     conn = psycopg2.connect(
         host=host,
